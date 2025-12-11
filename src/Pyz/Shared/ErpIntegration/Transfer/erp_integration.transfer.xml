@@ -1,0 +1,161 @@
+<?xml version="1.0"?>
+<transfers xmlns="spryker:transfer-01" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="spryker:transfer-01 http://static.spryker.com/transfer-01.xsd">
+
+    <transfer name="ExampleRequest" strict="true">
+    </transfer>
+
+    <transfer name="ExampleResponse" strict="true">
+        <property name="isSuccessful" type="bool" />
+        <property name="messages" type="string[]" singular="message" />
+    </transfer>
+
+    <transfer name="ErpLiveStockRequest" strict="true">
+        <property name="items" type="ErpLiveStockRequestItem[]" singular="item" />
+    </transfer>
+
+    <transfer name="ErpLiveStockRequestItem" strict="true">
+        <property name="sku" type="string" />
+        <property name="quantity" type="int" />
+    </transfer>
+
+    <transfer name="ErpLiveStockResponse" strict="true">
+        <property name="isSuccessful" type="bool" />
+        <property name="messages" type="string[]" singular="message" />
+        <property name="stocks" type="ErpLiveStockResponseItem[]" singular="stock" />
+    </transfer>
+
+    <transfer name="ErpLiveStockResponseItem" strict="true">
+        <property name="sku" type="string" />
+        <property name="availability" type="bool" />
+        <property name="stock" type="int" />
+    </transfer>
+
+    <transfer name="ErpCartValidationRequest" strict="true">
+        <property name="items" type="ErpCartValidationRequestItem[]" singular="item" />
+        <property name="shippingAddress" type="Address" />
+        <property name="billingAddress" type="Address" />
+    </transfer>
+
+    <transfer name="ErpCartValidationRequestItem" strict="true">
+        <property name="sku" type="string" />
+        <property name="quantity" type="int" />
+    </transfer>
+
+    <transfer name="ErpCartValidationResponse" strict="true">
+        <property name="isSuccessful" type="bool" />
+        <property name="messages" type="string[]" singular="message" />
+    </transfer>
+
+    <transfer name="ErpHealthCheckRequest" strict="true">
+    </transfer>
+
+    <transfer name="ErpHealthCheckResponse" strict="true">
+        <property name="isSuccessful" type="bool" />
+        <property name="messages" type="string[]" singular="message" />
+    </transfer>
+
+    <transfer name="ErpPricesRequest" strict="true">
+        <property name="priceRequests" type="ErpPriceData[]" singular="priceRequest" />
+    </transfer>
+
+    <transfer name="ErpPriceData" strict="true">
+        <property name="sku" type="string" />
+        <property name="price" type="int" />
+    </transfer>
+
+    <transfer name="ErpPricesResponse" strict="true">
+        <property name="isSuccessful" type="bool" />
+        <property name="messages" type="string[]" singular="message" />
+        <property name="priceResponses" type="ErpPriceResponse[]" singular="priceResponse" />
+    </transfer>
+
+    <transfer name="ErpPriceResponse" strict="true">
+        <property name="sku" type="string" />
+        <property name="price" type="int" />
+    </transfer>
+
+    <transfer name="ErpShippingPriceRequest" strict="true">
+        <property name="shippingMethodName" type="string" />
+        <property name="items" type="ErpItemData[]" singular="item" />
+        <property name="shippingAddress" type="ErpShippingAddress" />
+    </transfer>
+
+    <transfer name="ErpDeliveryTimeRequest" strict="true">
+        <property name="shippingMethodName" type="string" />
+        <property name="items" type="ErpItemData[]" singular="item" />
+        <property name="shippingAddress" type="ErpShippingAddress" />
+    </transfer>
+
+    <transfer name="ErpOrderExportRequest" strict="true">
+        <property name="orderReference" type="string" />
+        <property name="customerReference" type="string" />
+        <property name="items" type="ErpItemData[]" singular="item" />
+        <property name="totals" type="ErpTotals" />
+        <property name="shippingAddress" type="ErpShippingAddress" />
+        <property name="billingAddress" type="ErpShippingAddress" />
+    </transfer>
+
+    <transfer name="ErpTotals" strict="true">
+        <property name="discountTotal" type="int"/>
+        <property name="taxTotal" type="ErpTaxTotal"/>
+        <property name="grandTotal" type="int"/>
+        <property name="netTotal" type="int"/>
+        <property name="shipmentTotal" type="int"/>
+    </transfer>
+
+    <transfer name="ErpTaxTotal" strict="true">
+        <property name="taxRate" type="float"/>
+        <property name="amount" type="int"/>
+    </transfer>
+
+    <transfer name="ErpOrderExportResponse" strict="true">
+        <property name="isSuccessful" type="bool" />
+        <property name="messages" type="string[]" singular="message" />
+    </transfer>
+
+    <transfer name="ErpItemData" strict="true">
+        <property name="sku" type="string" />
+        <property name="quantity" type="int" />
+    </transfer>
+
+    <transfer name="ErpShippingAddress" strict="true">
+        <property name="country" type="string" />
+        <property name="city" type="string" />
+        <property name="zipCode" type="string" />
+        <property name="address1" type="string" />
+        <property name="address2" type="string" />
+    </transfer>
+
+    <transfer name="ErpShippingPriceResponse" strict="true">
+        <property name="shippingPrice" type="int" />
+        <property name="isSuccessful" type="bool" />
+        <property name="messages" type="string[]" singular="message" />
+    </transfer>
+
+    <transfer name="ErpDeliveryTimeResponse" strict="true">
+        <property name="deliveryTimeInSeconds" type="int" />
+        <property name="isSuccessful" type="bool" />
+        <property name="messages" type="string[]" singular="message" />
+    </transfer>
+
+    <transfer name="ErpCheckoutCartValidationRequest" strict="true">
+        <property name="items" type="ErpCartValidationRequestItem[]" singular="item" />
+        <property name="shippingAddress" type="Address" />
+        <property name="billingAddress" type="Address" />
+        <property name="customer" type="ErpCheckoutCartValidationRequestCustomer" />
+    </transfer>
+
+    <transfer name="ErpCheckoutCartValidationRequestCustomer" strict="true">
+        <property name="firstName" type="string" />
+        <property name="lastName" type="string" />
+        <property name="gender" type="string" />
+        <property name="email" type="string" />
+        <property name="phone" type="string" />
+    </transfer>
+
+    <transfer name="ErpCheckoutCartValidationResponse" strict="true">
+        <property name="isSuccessful" type="bool" />
+        <property name="messages" type="string[]" singular="message" />
+    </transfer>
+
+</transfers>

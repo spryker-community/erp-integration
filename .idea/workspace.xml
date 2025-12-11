@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="6ee01615-2a66-4405-9fcd-2064da098973" name="Changes" comment="some -&gt; example">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pyz/Client/ErpIntegration/ErpIntegrationClient.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pyz/Client/ErpIntegration/ErpIntegrationClient.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pyz/Client/ErpIntegration/ErpIntegrationConfig.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pyz/Client/ErpIntegration/ErpIntegrationConfig.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pyz/Client/ErpIntegration/ErpIntegrationFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pyz/Client/ErpIntegration/ErpIntegrationFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pyz/Client/ErpIntegration/Models/SomeRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pyz/Client/ErpIntegration/Models/SomeRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pyz/Client/ErpIntegration/Models/SomeRequestMapper.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pyz/Client/ErpIntegration/Models/SomeRequestMapper.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pyz/Shared/ErpIntegration/Transfer/erp_integration.transfer.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pyz/Shared/ErpIntegration/Transfer/erp_integration.transfer.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;profuel&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;git@github.com:spryker-community/erp-integration.git&quot;,
+    &quot;accountId&quot;: &quot;c0062d24-522f-4553-9161-2385d61bfab7&quot;
+  }
+}</component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="/bin/php" />
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
+  <component name="ProjectId" id="36h1tPmgafPMBjhkOuaUBDhFPT2" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/andreyt/data/erp-integration&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;Errors&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
+      &quot;TEXT&quot;
+    ]
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$/src/SprykerCommunity/Shared/CpiApi/Transfer" />
+      <recent name="$PROJECT_DIR$/src/SprykerCommunity/Service/CpiApi/Order/Simulate/Mapper" />
+      <recent name="$PROJECT_DIR$/src/SprykerCommunity/Zed/ErpIntegration" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/config/Shared" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-9b0f141eb926-JavaScript-PS-253.30387.85" />
+        <option value="bundled-php-predefined-a98d8de5180a-0e0d91225499-com.jetbrains.php.sharedIndexes-PS-253.30387.85" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6ee01615-2a66-4405-9fcd-2064da098973" name="Changes" comment="" />
+      <created>1765444202716</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1765444202716</updated>
+      <workItem from="1765444203802" duration="8888000" />
+      <workItem from="1765467411135" duration="2230000" />
+      <workItem from="1765523221991" duration="624000" />
+      <workItem from="1765531291920" duration="1142000" />
+      <workItem from="1766132486589" duration="2633000" />
+      <workItem from="1766158751401" duration="592000" />
+      <workItem from="1767345600241" duration="106000" />
+      <workItem from="1767345725306" duration="1175000" />
+      <workItem from="1767352144217" duration="3516000" />
+      <workItem from="1767601491695" duration="22816000" />
+      <workItem from="1767695885279" duration="597000" />
+      <workItem from="1767717875545" duration="1125000" />
+      <workItem from="1767805807908" duration="4168000" />
+      <workItem from="1768809698946" duration="1518000" />
+      <workItem from="1768983262444" duration="3716000" />
+      <workItem from="1769509186454" duration="4359000" />
+      <workItem from="1769614245882" duration="451000" />
+      <workItem from="1769617246944" duration="88000" />
+      <workItem from="1769618743681" duration="30000" />
+      <workItem from="1769678279595" duration="597000" />
+      <workItem from="1769784093048" duration="5303000" />
+      <workItem from="1770035061585" duration="382000" />
+      <workItem from="1770036461256" duration="7000" />
+      <workItem from="1770206060543" duration="2020000" />
+      <workItem from="1770213574114" duration="4644000" />
+      <workItem from="1770304484311" duration="777000" />
+      <workItem from="1771247314610" duration="343000" />
+      <workItem from="1771248443460" duration="10000" />
+    </task>
+    <task id="LOCAL-00001" summary="preview of the integration point implementation">
+      <option name="closed" value="true" />
+      <created>1765455528998</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1765455528998</updated>
+    </task>
+    <task id="LOCAL-00002" summary="SAP CPI integration">
+      <option name="closed" value="true" />
+      <created>1767627445699</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1767627445699</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Dummy integration of common places for ERP">
+      <option name="closed" value="true" />
+      <created>1767630932490</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1767630932490</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Dummy integration of common places for ERP">
+      <option name="closed" value="true" />
+      <created>1767631578182</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1767631578182</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Dummy integration of common places for ERP">
+      <option name="closed" value="true" />
+      <created>1767631998249</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1767631998249</updated>
+    </task>
+    <task id="LOCAL-00006" summary="fixes in the code">
+      <option name="closed" value="true" />
+      <created>1767717907732</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1767717907733</updated>
+    </task>
+    <task id="LOCAL-00007" summary="fixes in the code">
+      <option name="closed" value="true" />
+      <created>1767720052622</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1767720052622</updated>
+    </task>
+    <task id="LOCAL-00008" summary="fixes in the code">
+      <option name="closed" value="true" />
+      <created>1767720321919</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1767720321919</updated>
+    </task>
+    <task id="LOCAL-00009" summary="fixes in the code">
+      <option name="closed" value="true" />
+      <created>1767805828431</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1767805828431</updated>
+    </task>
+    <task id="LOCAL-00010" summary="making code extendable">
+      <option name="closed" value="true" />
+      <created>1768232918132</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1768232918132</updated>
+    </task>
+    <task id="LOCAL-00011" summary="remove CPI&#10;standartize ERP call for a template">
+      <option name="closed" value="true" />
+      <created>1768580455311</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1768580455311</updated>
+    </task>
+    <task id="LOCAL-00012" summary="remove CPI&#10;standartize ERP call for a template">
+      <option name="closed" value="true" />
+      <created>1768580467392</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1768580467392</updated>
+    </task>
+    <task id="LOCAL-00013" summary="reworked and added documentation">
+      <option name="closed" value="true" />
+      <created>1769015083514</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1769015083514</updated>
+    </task>
+    <task id="LOCAL-00014" summary="reworked and added documentation">
+      <option name="closed" value="true" />
+      <created>1769525382134</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1769525382134</updated>
+    </task>
+    <task id="LOCAL-00015" summary="reworked and added documentation">
+      <option name="closed" value="true" />
+      <created>1769525782228</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1769525782228</updated>
+    </task>
+    <task id="LOCAL-00016" summary="reworked and added documentation">
+      <option name="closed" value="true" />
+      <created>1769528094347</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1769528094347</updated>
+    </task>
+    <task id="LOCAL-00017" summary="reworked and added documentation">
+      <option name="closed" value="true" />
+      <created>1769528566149</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1769528566149</updated>
+    </task>
+    <task id="LOCAL-00018" summary="text updates">
+      <option name="closed" value="true" />
+      <created>1770213614907</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1770213614907</updated>
+    </task>
+    <task id="LOCAL-00019" summary="preview for public doc">
+      <option name="closed" value="true" />
+      <created>1770213673055</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1770213673055</updated>
+    </task>
+    <task id="LOCAL-00020" summary="updates after internal review">
+      <option name="closed" value="true" />
+      <created>1770291296319</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1770291296319</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="preview of the integration point implementation" />
+    <MESSAGE value="SAP CPI integration" />
+    <MESSAGE value="Dummy integration of common places for ERP" />
+    <MESSAGE value="fixes in the code" />
+    <MESSAGE value="making code extendable" />
+    <MESSAGE value="remove CPI&#10;standartize ERP call for a template" />
+    <MESSAGE value="reworked and added documentation" />
+    <MESSAGE value="text updates" />
+    <MESSAGE value="preview for public doc" />
+    <MESSAGE value="updates after internal review" />
+    <MESSAGE value="some -&gt; example" />
+    <option name="LAST_COMMIT_MESSAGE" value="some -&gt; example" />
+  </component>
+</project>
