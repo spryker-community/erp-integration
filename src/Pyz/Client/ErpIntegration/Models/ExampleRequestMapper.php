@@ -40,6 +40,6 @@ class ExampleRequestMapper
 
         $responseTransfer->fromArray($responseData, true);
 
-        return $responseTransfer->setIsSuccessful(true);
+        return $responseTransfer;
     }
 }

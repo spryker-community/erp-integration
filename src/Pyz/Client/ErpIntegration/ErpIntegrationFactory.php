@@ -121,27 +121,27 @@ class ErpIntegrationFactory extends AbstractFactory
         return new BaseRequest();
     }
 
-    public function createLiveStockRequestMapper(): LiveStockRequestMapper
+    protected function createLiveStockRequestMapper(): LiveStockRequestMapper
     {
         return new LiveStockRequestMapper();
     }
 
-    public function createCartValidationRequestMapper(): CartValidationRequestMapper
+    protected function createCartValidationRequestMapper(): CartValidationRequestMapper
     {
         return new CartValidationRequestMapper();
     }
 
-    public function createHealthCheckRequestMapper(): HealthCheckRequestMapper
+    protected function createHealthCheckRequestMapper(): HealthCheckRequestMapper
     {
         return new HealthCheckRequestMapper();
     }
 
-    public function createPricesRequestMapper(): PricesRequestMapper
+    protected function createPricesRequestMapper(): PricesRequestMapper
     {
         return new PricesRequestMapper();
     }
 
-    public function createShippingPriceRequestMapper(): ShippingPriceRequestMapper
+    protected function createShippingPriceRequestMapper(): ShippingPriceRequestMapper
     {
         return new ShippingPriceRequestMapper();
     }
@@ -171,7 +171,7 @@ class ErpIntegrationFactory extends AbstractFactory
         );
     }
 
-    public function createExampleRequestMapper(): ExampleRequestMapper
+    protected function createExampleRequestMapper(): ExampleRequestMapper
     {
         return new ExampleRequestMapper();
     }
