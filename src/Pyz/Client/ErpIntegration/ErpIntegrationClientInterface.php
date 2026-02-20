@@ -23,6 +23,8 @@ use Generated\Shared\Transfer\ErpPricesRequestTransfer;
 use Generated\Shared\Transfer\ErpPricesResponseTransfer;
 use Generated\Shared\Transfer\ErpShippingPriceRequestTransfer;
 use Generated\Shared\Transfer\ErpShippingPriceResponseTransfer;
+use Generated\Shared\Transfer\ExampleRequestTransfer;
+use Generated\Shared\Transfer\ExampleResponseTransfer;
 
 interface ErpIntegrationClientInterface
 {
@@ -51,4 +53,8 @@ interface ErpIntegrationClientInterface
     public function validateOrder(
         ErpCheckoutCartValidationRequestTransfer $requestTransfer,
     ): ErpCheckoutCartValidationResponseTransfer;
+
+    public function doExampleRequest(
+        ExampleRequestTransfer $requestTransfer,
+    ): ExampleResponseTransfer;
 }

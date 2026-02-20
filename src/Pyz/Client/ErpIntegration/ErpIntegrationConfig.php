@@ -61,6 +61,6 @@ class ErpIntegrationConfig extends AbstractBundleConfig
 
     public function getExampleRequestUrl(): string
     {
-        return $this->get(ErpIntegrationConstants::SOME_REQUEST_URL);
+        return $this->get(ErpIntegrationConstants::EXAMPLE_REQUEST_URL);
     }
 }

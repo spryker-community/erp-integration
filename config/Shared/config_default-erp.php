@@ -4,7 +4,7 @@ use Pyz\Shared\ErpIntegration\ErpIntegrationConstants;
 
 $config[ErpIntegrationConstants::BASE_URI] = getenv('ERP_BASE_URI');
 
-$config[ErpIntegrationConstants::SOME_REQUEST_URL] = '/some-request/';
+$config[ErpIntegrationConstants::EXAMPLE_REQUEST_URL] = '/some-request/';
 
 $config[ErpIntegrationConstants::LIVE_STOCK_URL] = '/live-stock/';
 $config[ErpIntegrationConstants::CART_VALIDATION_URL] = '/cart-validation/';

@@ -14,7 +14,7 @@ use Spryker\Client\Kernel\AbstractDependencyProvider;
 use Spryker\Client\Kernel\Container;
 
 /**
- * @method \Pyz\Client\ErpIntegration\ErpIntegrationConfig getConfig
+ * @method \Pyz\Client\ErpIntegration\ErpIntegrationConfig getConfig()
  */
 class ErpIntegrationDependencyProvider extends AbstractDependencyProvider
 {

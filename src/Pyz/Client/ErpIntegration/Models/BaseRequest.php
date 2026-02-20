@@ -15,13 +15,14 @@ use Spryker\Shared\Kernel\Transfer\AbstractTransfer;
 use Spryker\Shared\Log\LoggerTrait;
 
 /**
- * @template T
+ * @template T of AbstractTransfer
  */
 class BaseRequest
 {
     use LoggerTrait;
 
     protected const int DEFAULT_REQUEST_TIMEOUT_SECONDS = 5;
+    protected const int MAX_LOG_BODY_LENGTH = 10000;
 
     protected string $modelName = '';
 
@@ -60,9 +61,9 @@ class BaseRequest
     }
 
     /**
-     * @param <T> $responseTransfer
+     * @param T $responseTransfer
      *
-     * @return <T>
+     * @return T
      */
     public function handleFailedConnectionResponse(
         AbstractTransfer $responseTransfer,
@@ -75,7 +76,7 @@ class BaseRequest
         $this->getLogger()->error($this->modelName . ' request timed out or connection failed', [
             'exception' => $exception->getMessage(),
             'url' => $url,
-            'requestOptions' => $requestOptions,
+            'requestOptions' => $this->sanitizeRequestOptions($requestOptions),
             'request' => $requestBody,
         ]);
 
@@ -84,9 +85,9 @@ class BaseRequest
     }
 
     /**
-     * @param <T> $responseTransfer
+     * @param T $responseTransfer
      *
-     * @return <T>
+     * @return T
      */
     public function handleGenericRequestFailureResponse(
         AbstractTransfer $responseTransfer,
@@ -99,7 +100,7 @@ class BaseRequest
         $this->getLogger()->error($this->modelName . ' request failed', [
             'exception' => $exception->getMessage(),
             'url' => $url,
-            'requestOptions' => $requestOptions,
+            'requestOptions' => $this->sanitizeRequestOptions($requestOptions),
             'request' => $requestBody,
         ]);
 
@@ -107,9 +108,9 @@ class BaseRequest
     }
 
     /**
-     * @param <T> $responseTransfer
+     * @param T $responseTransfer
      *
-     * @return <T>
+     * @return T
      */
     public function createFailedResponse(
         AbstractTransfer $responseTransfer,
@@ -118,7 +119,6 @@ class BaseRequest
         string $requestBody,
     ): AbstractTransfer {
         $responseTransfer->setIsSuccessful(false);
-        $responseTransfer->setIsFailed(true);
         $responseTransfer->addMessage($exception->getMessage());
 
         return $responseTransfer;
@@ -129,15 +129,37 @@ class BaseRequest
         $this->getLogger()->info($this->modelName . ' request', [
             'request' => $requestTransfer->toArray(),
             'url' => $requestUrl,
-            'requestOptions' => $requestOptions,
+            'requestOptions' => $this->sanitizeRequestOptions($requestOptions),
         ]);
     }
 
     public function logResponse(ResponseInterface $response, AbstractTransfer $responseTransfer): void
     {
+        $responseBody = (string)$response->getBody();
+
         $this->getLogger()->info($this->modelName . ' response', [
-            'response' => (string)$response->getBody(),
+            'response' => mb_strlen($responseBody) > self::MAX_LOG_BODY_LENGTH
+                ? mb_substr($responseBody, 0, self::MAX_LOG_BODY_LENGTH) . '... [truncated]'
+                : $responseBody,
             'responseTransfer' => $responseTransfer->toArray(),
         ]);
+    }
+
+    /**
+     * @param array<string, mixed> $options
+     *
+     * @return array<string, mixed>
+     */
+    protected function sanitizeRequestOptions(array $options): array
+    {
+        if (isset($options['headers'])) {
+            foreach ($options['headers'] as $name => $value) {
+                if (in_array(strtolower($name), ['authorization', 'x-api-key', 'api-key'], true)) {
+                    $options['headers'][$name] = '[REDACTED]';
+                }
+            }
+        }
+
+        return $options;
     }
 }

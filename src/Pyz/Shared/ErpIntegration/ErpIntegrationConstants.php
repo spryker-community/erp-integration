@@ -14,7 +14,7 @@ namespace Pyz\Shared\ErpIntegration;
  */
 interface ErpIntegrationConstants
 {
-    public const string SOME_REQUEST_URL = 'ERP_INTEGRATION:SOME_REQUEST_URL';
+    public const string EXAMPLE_REQUEST_URL = 'ERP_INTEGRATION:EXAMPLE_REQUEST_URL';
 
     public const string BASE_URI = 'ERP_INTEGRATION:BASE_URI';
 
