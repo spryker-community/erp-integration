@@ -1,6 +1,6 @@
 # ERP Integration Template
 
-Public documentation is available here: [ERP Integration Template](https://docs.spryker.com/docs/integrations/erp-integration-template.html) 
+Public documentation is available here: [ERP Integration Template](https://docs.spryker.com/docs/integrations/custom-building-integrations/erp-integration-template) 
 
 ## Overview
 
