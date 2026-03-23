@@ -160,4 +160,25 @@
         <property name="messages" type="string[]" singular="message" />
     </transfer>
 
+    <transfer name="ErpWebhookPayload" strict="true">
+    </transfer>
+
+    <transfer name="ErpWebhookProcessResponse" strict="true">
+        <property name="isSuccess" type="bool"/>
+    </transfer>
+
+    <transfer name="ErpWebhookRequest" strict="true">
+    </transfer>
+
+    <transfer name="ErpWebhookResponse" strict="true">
+        <property name="isSuccess" type="bool"/>
+        <property name="errorResponse" type="ErpApiErrorResponse"/>
+    </transfer>
+
+    <transfer name="ErpApiErrorResponse" strict="true">
+        <property name="statusCode" type="int"/>
+        <property name="message" type="string"/>
+        <property name="body" type="string"/>
+    </transfer>
+
 </transfers>

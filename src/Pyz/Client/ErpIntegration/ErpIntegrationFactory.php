@@ -1,7 +1,7 @@
 <?php
 
 /**
- * This file is part of the Spryker Suite.
+ * MIT License
  * For full license information, please view the LICENSE file that was distributed with this source code.
  */
 
@@ -29,7 +29,10 @@ use Pyz\Client\ErpIntegration\Models\ShippingPriceRequest;
 use Pyz\Client\ErpIntegration\Models\ShippingPriceRequestMapper;
 use Pyz\Client\ErpIntegration\Models\ExampleRequest;
 use Pyz\Client\ErpIntegration\Models\ExampleRequestMapper;
+use Pyz\Client\ErpIntegration\Zed\ErpStub;
+use Pyz\Client\ErpIntegration\Zed\ErpStubInterface;
 use Spryker\Client\Kernel\AbstractFactory;
+use Spryker\Client\ZedRequest\ZedRequestClientInterface;
 
 /**
  * @method \Pyz\Client\ErpIntegration\ErpIntegrationConfig getConfig()
@@ -179,5 +182,15 @@ class ErpIntegrationFactory extends AbstractFactory
     public function getGuzzleClient(): Client
     {
         return $this->getProvidedDependency(ErpIntegrationDependencyProvider::CLIENT_GUZZLE);
+    }
+
+    public function createZedStub(): ErpStubInterface
+    {
+        return new ErpStub($this->getZedRequestClient());
+    }
+
+    protected function getZedRequestClient(): ZedRequestClientInterface
+    {
+        return $this->getProvidedDependency(ErpIntegrationDependencyProvider::CLIENT_ZED_REQUEST);
     }
 }

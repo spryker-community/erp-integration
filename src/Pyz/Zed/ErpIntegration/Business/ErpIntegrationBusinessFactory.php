@@ -1,7 +1,7 @@
 <?php
 
 /**
- * This file is part of the Spryker Suite.
+ * MIT License
  * For full license information, please view the LICENSE file that was distributed with this source code.
  */
 
@@ -17,6 +17,7 @@ use Pyz\Zed\ErpIntegration\Business\Model\HealthChecker;
 use Pyz\Zed\ErpIntegration\Business\Model\OrderExporter;
 use Pyz\Zed\ErpIntegration\Business\Model\ShipmentMethodDeliveryTimeCalculator;
 use Pyz\Zed\ErpIntegration\Business\Model\ShipmentMethodPriceCalculator;
+use Pyz\Zed\ErpIntegration\Business\Model\WebHookProcessor;
 use Pyz\Zed\ErpIntegration\ErpIntegrationDependencyProvider;
 use Spryker\Zed\Kernel\Business\AbstractBusinessFactory;
 
@@ -69,6 +70,11 @@ class ErpIntegrationBusinessFactory extends AbstractBusinessFactory
         return new OrderExporter(
             $this->getErpIntegrationClient(),
         );
+    }
+
+    public function createWebHookProcessor(): WebHookProcessor
+    {
+        return new WebHookProcessor();
     }
 
     public function getErpIntegrationClient(): ErpIntegrationClientInterface

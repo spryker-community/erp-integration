@@ -1,7 +1,7 @@
 <?php
 
 /**
- * This file is part of the Spryker Suite.
+ * MIT License
  * For full license information, please view the LICENSE file that was distributed with this source code.
  */
 
@@ -24,6 +24,8 @@ use Generated\Shared\Transfer\ErpPricesRequestTransfer;
 use Generated\Shared\Transfer\ErpPricesResponseTransfer;
 use Generated\Shared\Transfer\ErpShippingPriceRequestTransfer;
 use Generated\Shared\Transfer\ErpShippingPriceResponseTransfer;
+use Generated\Shared\Transfer\ErpWebhookPayloadTransfer;
+use Generated\Shared\Transfer\ErpWebhookProcessResponseTransfer;
 use Generated\Shared\Transfer\ExampleRequestTransfer;
 use Generated\Shared\Transfer\ExampleResponseTransfer;
 use Spryker\Client\Kernel\AbstractClient;
@@ -97,4 +99,12 @@ class ErpIntegrationClient extends AbstractClient implements ErpIntegrationClien
             ->createExampleRequest()
             ->doRequest($requestTransfer);
     }
+
+    public function processWebhook(
+        ErpWebhookPayloadTransfer $webhookPayloadTransfer,
+    ): ErpWebhookProcessResponseTransfer {
+        return $this->getFactory()
+            ->createZedStub()
+            ->processWebhook($webhookPayloadTransfer);
+    }    
 }
